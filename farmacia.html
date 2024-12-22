@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Farmacia.com</title>
+	<link href="img/logo.png" rel="shortcut icon" />
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/style-responsive.css" rel="stylesheet" type="text/css" />
+	<link href="nicepage.css" media="screen" rel="stylesheet" />
+	<link rel="stylesheet" href="Página-2.css" media="screen">
+
+</head>
+<body>
+  <style>
+
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('img/background/oscuro.jpg'); 
+      background-size: cover;
+      background-position: center; 
+      background-repeat: no-repeat; 
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      background-color: rgba(0, 0, 0, 0.5); 
+    }
+
+    .login-form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login-form button:hover {
+      background-color: #45a049;
+    }
+
+
+    .main-content {
+      display: none; 
+      padding: 20px;
+      font-size: 20px;
+    }
+
+    .login-image {
+      width: 100%;
+      max-width: 150px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+
+    .logged-in .main-content {
+      display: block;
+    }
+
+
+    .portfolio {
+      background-image: url('img/background/lgt.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      padding: 20px 0;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="login-container" id="login-container">
+    <div class="login-form">
+      <img src="img/logo.png" alt="Logo" class="login-image"> 
+      <h2>Iniciar sesión</h2>
+      <form id="login-form" onsubmit="return handleLogin(event)">
+        <input type="text" id="username" placeholder="Usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Ingresar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="main-content" id="main-content">
+
+
+    <section class="start-page parallax-background" id="home">
+      <div class="opacity"></div>
+      <div class="content">
+        <div class="text">
+          <h1>Bienvenido<br />a <span>Nuestra Farmacia</span></h1>
+          <p>¡Te ofrecemos lo mejor de nuestros productos de mejor calidad!</p>
+          <div class="read-more"><a href="#about-us">Leer Más</a></div>
+        </div>
+        <div class="arrow-down"></div>
+      </div>
+    </section>
+</section>
+
+<section class="menu-media">
+<div class="menu-content">
+<div class="logo">Farmacia Buena salud</div>
+
+<div class="icon"><a href="#"><img src="img/icons/menu-media.png" /></a></div>
+</div>
+</section>
+
+<ul class="menu-click">
+	<li href="#home"><a href="#home">INICIO</a></li>
+	<li href="#about-us"><a href="#about-us">SOBRE NOSOTROS</a></li>
+	<li href="#portfolio"><a href="#portfolio">PRODUCTOS</a></li>
+	<li href="#contact"><a href="#contact">CONTACTO</a></li>
+</ul>
+
+<head>
+  <style>
+    .menu .logo img {
+      width: 90px; 
+      height: auto; 
+    }
+  </style>
+</head>
+<head>
+  <style>
+    #about-us {
+      background-image: url('img/background/oscuro.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+
+<body>
+  <section class="menu">
+    <div class="menu-content">
+      <div class="logo"><a href="#"><img class="logo" src="img/logo.png" /></a></div>
+
+      <ul id="menu">
+        <li><a href="#home">INICIO</a></li>
+        <li><a href="#about-us">SOBRE NOSOTROS</a></li>
+        <li><a href="#portfolio">PRODUCTOS</a></li>
+        <li><a href="#contact">CONTACTO</a></li>
+      </ul>
+    </div>
+  </section>
+</body>
+
+<section class="about-us" id="about-us">
+  <h1>SOBRE NOSOTROS</h1>
+  <p class="title">Somos una farmacia organizada, encargada de innovar, en productos de salud.</p>
+
+  <div class="column-one">
+    <div class="circle-one"></div>
+
+    <h2>MISI&Oacute;N</h2>
+
+    <p>&quot;En Farmacia Buena Salud" nos dedicamos a brindarle una mejor experiencia, a la vez que cuidamos tu salud y la de tu familia&quot;.</p>
+  </div>
+
+  <div class="column-two">
+    <div class="circle-two"></div>
+
+    <h2>VISI&Oacute;N</h2>
+
+    <p>&quot;Ser una farmacia que brinda las mejores elaboraci&oacute;n y comercializaci&oacute;n de medicamnetos de calidad comprometida responsablemente con la sociedad y ambiente&quot;.</p>
+  </div>
+</section>
+
+
+
+<div class="clear"></div>
+
+
+
+<section class="portfolio" id="portfolio">
+<div class="portfolio-margin">
+<h1>PRODUCTOS</h1>
+
+<hr />
+<ul class="grid">
+	<li><a href="#"><img alt="Portfolio item" src="img/portfolio/1.jpg" /> </a>
+	<a href="#"> </a></li>
+
+	<li><a href="#"><img alt="Portfolio item" src="img/portfolio/2.jpg" /> </a>
+	<a href="#"> </a></li>
+
+	<li><a href="#"><img alt="Portfolio item" src="img/portfolio/3.jpg" /> </a>
+	<a href="#"> </a></li>
+	
+	<li><a href="#"><img alt="Portfolio item" src="img/portfolio/4.jpg" /> </a>
+	<a href="#"> </a></li>
+
+	<li><a href="#"><img alt="Portfolio item" src="img/portfolio/5.jpg" /> </a>
+	<a href="#"> </a></li>
+
+	<li><a href="#"><img alt="Portfolio item" src="img/portfolio/6.jpg" /> </a>
+	<a href="#"> </a></li>
+
+	<li><a href="#"><img alt="Portfolio item" src="img/portfolio/7.jpg" /> </a>
+	<a href="#"> </a></li>
+
+	<li><a href="#"><img alt="Portfolio item" src="img/portfolio/8.jpg" /> </a>
+	<a href="#"> </a></li>
+
+	<li><a href="#"><img alt="Portfolio item" src="img/portfolio/9.jpg" /> </a>
+	<a href="#"> </a></li>
+  
+	<li><a href="#"><img alt="Portfolio item" src="img/portfolio/10.jpg" /> </a>
+    <a href="#"> </a></li>
+
+	<li><a href="#"><img alt="Portfolio item" src="img/portfolio/11.jpg" /> </a>
+
+    <a href="#"> </a></li>
+
+	<li><a href="#"><img alt="Portfolio item" src="img/portfolio/12.jpg" /> </a>
+    <a href="#"> </a></li>
+    
+	<li><a href="#"><img alt="Portfolio item" src="img/portfolio/13.jpg" /> </a>
+    <a href="#"> </a></li>
+
+    <li><a href="#"><img alt="Portfolio item" src="img/portfolio/14.jpg" /> </a>
+      <a href="#"> </a></li>
+
+      <li><a href="#"><img alt="Portfolio item" src="img/portfolio/15.jpg" /> </a>
+        <a href="#"> </a></li>
+</ul>
+
+<div class="read-more"><a href="#">Load more</a></div>
+</div>
+</section>
+<div class="clear"></div>
+
+
+<section class="partners parallax-background-partners" id="partners">
+<div class="opacity"></div>
+
+<div class="content">
+<div class="logo"><a href="#"><img src="img/logos/alex1.png" /></a> <a href="#"><img src="img/logos/archiq.png" /></a> <a href="#"><img src="img/logos/thomsoon.png" /></a> <a href="#"><img src="img/logos/alex2.png" /></a></div>
+</div>
+</section>
+
+<section class="u-clearfix u-custom-color-2 u-section-1" id="carousel_fdc5">
+<section class="contact" id="contact">
+  <h1>Contacto</h1>
+  
+  <script>
+    window.addEventListener('mouseover', initLandbot, { once: true });
+    window.addEventListener('touchstart', initLandbot, { once: true });
+    var myLandbot;
+    function initLandbot() {
+      if (!myLandbot) {
+        var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+        s.addEventListener('load', function() {
+          var myLandbot = new Landbot.Livechat({
+            configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2718932-2RKKCMNA1FK8K8KF/index.json',
+          });
+        });
+        s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+    }
+    </script>
+<div class="content">
+  <div class="contact-text">
+    Celular: <strong>915316458</strong><br />
+    Ubicación: <strong><a href="https://www.google.com/maps?q=Av+Los+Portales+123" target="_blank">Av. Los Portales 123</a></strong><br />
+    e-mail: <strong>gerencia@farmacia.com</strong>
+  </div>
+</div>
+
+  </section>
+
+<section class="u-align-center u-clearfix u-section-3" id="sec-d981">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-custom-color-4 u-list-item u-opacity u-opacity-75 u-repeater-item u-list-item-1">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <img class="u-image u-image-contain u-image-1" src="images/whatsApp_all.jpg" data-image-width="360" data-image-height="360">
+              </div>
+            </div>
+            <div class="u-container-style u-custom-color-4 u-list-item u-opacity u-opacity-75 u-repeater-item u-list-item-2">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <img class="u-image u-image-contain u-image-2" src="images/whatsApp_all.jpg" data-image-width="150" data-image-height="150">
+              </div>
+            </div>
+            <div class="u-container-style u-custom-color-4 u-list-item u-opacity u-opacity-75 u-repeater-item u-list-item-3">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <img class="u-image u-image-contain u-image-3" src="images/whatsApp_all.jpg" data-image-width="392" data-image-height="392">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<script>
+    
+    function handleLogin(event) {
+        event.preventDefault();
+
+   
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (username === "alder" && password === "12345") { // Cambié el usuario y la contraseña aquí
+            
+            document.getElementById("login-container").style.display = "none";
+
+            document.getElementById("main-content").style.display = "block";
+        } else {
+            alert("Usuario o contraseña incorrectos");
+        }
+    }
+</script>
+
+</body>
+</html>
+
